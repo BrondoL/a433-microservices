@@ -1,0 +1,92 @@
+a433-microservices-item-app-1  | 
+a433-microservices-item-app-1  | > docker-software-delivery@1.0.0 start /app
+a433-microservices-item-app-1  | > node ./bin/www
+a433-microservices-item-app-1  | 
+a433-microservices-item-app-1  | NODE_ENV: production
+a433-microservices-item-app-1  | Connected to database
+a433-microservices-item-app-1  | [0mGET / [32m200 [0m381.929 ms - 785[0m
+a433-microservices-item-app-1  | [0mGET /javascripts/dist/dist.min.js [32m200 [0m3.642 ms - 186999[0m
+a433-microservices-item-app-1  | [0mGET /stylesheets/style.css [32m200 [0m31.407 ms - 519[0m
+a433-microservices-item-app-1  | [0mGET /api [32m200 [0m10.280 ms - 2[0m
+a433-microservices-item-app-1  | [0mGET /favicon.ico [33m404 [0m14.932 ms - 270[0m
+a433-microservices-item-app-1  | [0mPOST /api [32m201 [0m28.854 ms - 52[0m
+a433-microservices-item-app-1  | [0mPOST /api [32m201 [0m2.234 ms - 51[0m
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.744+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=0bf1a29fb0da
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] db version v3.6.23
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] modules: none
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] build environment:
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten]     distarch: x86_64
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.745+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.746+0000 I STORAGE  [initandlisten] 
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.746+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.746+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+a433-microservices-item-db-1   | 2023-09-05T23:51:10.746+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3417M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.253+0000 I STORAGE  [initandlisten] WiredTiger message [1693957871:253202][1:0x7f24c3dafa40], txn-recover: Set global recovery timestamp: 0
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.275+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.275+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.275+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.275+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.276+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 09e44bc6-ff30-487c-b5d6-0e3013a5041b
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.286+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.286+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 93ba2f0e-e303-4b7d-90ae-830fa192252d
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.330+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.331+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: b6cf8f0b-ce15-422c-b816-1c491cfa34f5
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.331+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.331+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.331+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.346+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.346+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+a433-microservices-item-db-1   | 2023-09-05T23:51:11.347+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+a433-microservices-item-db-1   | 2023-09-05T23:51:40.848+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39030 #1 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:51:40.849+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:39030 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:51:40.854+0000 I NETWORK  [conn1] end connection 127.0.0.1:39030 (0 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:52:10.980+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:51208 #2 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:52:10.981+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:51208 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:52:10.985+0000 I NETWORK  [conn2] end connection 127.0.0.1:51208 (0 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:52:26.331+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:47506 #3 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:52:26.339+0000 I NETWORK  [conn3] received client metadata from 172.20.0.3:47506 conn3: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.49-linuxkit" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+a433-microservices-item-db-1   | 2023-09-05T23:52:41.108+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48756 #4 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:52:41.109+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:48756 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:52:41.112+0000 I NETWORK  [conn4] end connection 127.0.0.1:48756 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:53:11.237+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36110 #5 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:53:11.238+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:36110 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:53:11.241+0000 I NETWORK  [conn5] end connection 127.0.0.1:36110 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:53:41.364+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33138 #6 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:53:41.365+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:33138 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:53:41.368+0000 I NETWORK  [conn6] end connection 127.0.0.1:33138 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:54:11.496+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56570 #7 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:54:11.497+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:56570 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:54:11.500+0000 I NETWORK  [conn7] end connection 127.0.0.1:56570 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:54:41.660+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53716 #8 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:54:41.661+0000 I NETWORK  [conn8] received client metadata from 127.0.0.1:53716 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:54:41.673+0000 I NETWORK  [conn8] end connection 127.0.0.1:53716 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:55:11.848+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:50846 #9 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:55:11.849+0000 I NETWORK  [conn9] received client metadata from 127.0.0.1:50846 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:55:11.854+0000 I NETWORK  [conn9] end connection 127.0.0.1:50846 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:55:42.051+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42554 #10 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:55:42.052+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:42554 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:55:42.056+0000 I NETWORK  [conn10] end connection 127.0.0.1:42554 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:55:54.943+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:41580 #11 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:55:54.945+0000 I NETWORK  [conn11] received client metadata from 127.0.0.1:41580 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:55:54.950+0000 I NETWORK  [conn11] end connection 127.0.0.1:41580 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:56:12.210+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:47556 #12 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:56:12.211+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:47556 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:56:12.214+0000 I NETWORK  [conn12] end connection 127.0.0.1:47556 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:56:42.332+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:51404 #13 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:56:42.332+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:51404 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:56:42.337+0000 I NETWORK  [conn13] end connection 127.0.0.1:51404 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:57:12.505+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43784 #14 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:57:12.507+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:43784 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:57:12.512+0000 I NETWORK  [conn14] end connection 127.0.0.1:43784 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:57:42.654+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46234 #15 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:57:42.655+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:46234 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:57:42.658+0000 I NETWORK  [conn15] end connection 127.0.0.1:46234 (1 connection now open)
+a433-microservices-item-db-1   | 2023-09-05T23:58:09.190+0000 I STORAGE  [conn3] createCollection: accumulator.documents with generated UUID: a783a314-d878-4e9b-90f2-6baaa3282761
+a433-microservices-item-db-1   | 2023-09-05T23:58:12.777+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:40330 #16 (2 connections now open)
+a433-microservices-item-db-1   | 2023-09-05T23:58:12.777+0000 I NETWORK  [conn16] received client metadata from 127.0.0.1:40330 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+a433-microservices-item-db-1   | 2023-09-05T23:58:12.781+0000 I NETWORK  [conn16] end connection 127.0.0.1:40330 (1 connection now open)

@@ -1,0 +1,51 @@
+# Docker Compose version
+version: "3.7"
+
+# List of services to be run
+services:
+  # Service for the item-app application
+  item-app:
+    # Used image
+    image: ghcr.io/brondol/item-app:v1
+    # If the specified image is not found, it will build from the Dockerfile in the current directory
+    build: ./
+    # Map port 80 on the host to port 8080 on the container
+    ports:
+      - 8080:8080
+    # Automatically restart the container if it stops
+    restart: always
+    # Use the item-app-network
+    networks:
+      - item-app-network
+    # Start the container after the "item-db" container is running
+    depends_on:
+      - "item-db"
+
+  # Service for the database
+  item-db:
+    # Used image
+    image: mongo:3
+    # Automatically restart the container if it stops
+    restart: always
+    # Mount the "app-db" volume to the /data/db path in the container
+    volumes:
+      - app-db:/data/db
+    # Use the item-app-network
+    networks:
+      - item-app-network
+    # Define a healthcheck for the container
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.stats().ok"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+# Define a volume named "app-db"
+volumes:
+  app-db:
+    driver: local
+
+# Both containers are connected to the item-app-network
+networks:
+  item-app-network:
+    driver: bridge
