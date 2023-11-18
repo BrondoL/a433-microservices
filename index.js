@@ -16,6 +16,7 @@ async function connectToQueue() {
         connection = await amqp.connect(amqpServer);
         channel = await connection.createChannel();
         await channel.assertQueue("order");
+        console.log("Connected to the queue!");
         channel.consume("order", data => {
             console.log(`Order received: ${Buffer.from(data.content)}`);
             console.log("** Will be shipped soon! **\n")
